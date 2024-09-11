@@ -3,8 +3,7 @@
 ## Enlaces
 
 Dashboard Looker Studio [enlace](https://www.google.com/url?q=https://lookerstudio.google.com/reporting/7893ce7d-40d0-4d16-ba5c-b9275a236f84/page/p_778ch8jqkd/edit&sa=D&source=docs&ust=1726039376046579&usg=AOvVaw2UbAPXp76nCRbfaiSDrke_)<br>
-Presentación Google Slides [enlace]([https://www.google.com/url?q=https://lookerstudio.google.com/reporting/7893ce7d-40d0-4d16-ba5c-b9275a236f84/page/p_778ch8jqkd/edit&sa=D&source=docs&ust=1726039376046579&usg=AOvVaw2UbAPXp76nCRbfaiSDrke_](https://docs.google.com/presentation/d/1Crpgxey_52Pm-UbDiK37PEK-PRMR0aVUuv8OIcBj5_k/edit#slide=id.p)
-)<br>
+Presentación Google Slides [enlace](https://docs.google.com/presentation/d/1Crpgxey_52Pm-UbDiK37PEK-PRMR0aVUuv8OIcBj5_k/edit#slide=id.p)<br>
 Proyecto BigQuery [enlace](https://console.cloud.google.com/bigquery?hl=es&project=laboratoria-426816&ws=!1m0)<br>
 Tablas riesgo relativo y Correlación Pearson Google Sheets [enlace](https://docs.google.com/spreadsheets/d/1llGpm6qXcjecN5HqJBCZ8O1bd2yvLPsxzYjOPIBRCbU/edit?gid=0#gid=0)<br>
 
@@ -1464,7 +1463,7 @@ Factores de mayor riesgo resumidos:
 ## Validación hipótesis
 
 1. Los más jóvenes tienen un mayor riesgo de impago.  ✅ **VERDADERO** Son los clientes jóvenes (21 a 34 años) quienes representan el mayor grupo de riesgo.
-2. Las personas con más cantidad de préstamos activos tienen mayor riesgo de ser malos pagadores. ❎ +*FALSO** Son los clientes con baja cantidad de préstamos quienes representan el mayor grupo de riesgo (tercil 1, de 1 a 6 préstamos).
+2. Las personas con más cantidad de préstamos activos tienen mayor riesgo de ser malos pagadores. ❎ **FALSO** Son los clientes con baja cantidad de préstamos quienes representan el mayor grupo de riesgo (tercil 1, de 1 a 6 préstamos).
 3. Las personas que han retrasado sus pagos por más de 90 días tienen mayor riesgo de ser malos pagadores. ✅ **VERDADERO** La incurrencia en retrasos de más de 90 días posee un riesgo relativo de 192,35, siendo extremadamente significativa.
 
 ## Hallazgos 
