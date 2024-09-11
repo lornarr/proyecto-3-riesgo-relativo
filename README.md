@@ -75,6 +75,8 @@ FROM `laboratoria-426816.proyecto3_riesgorelativo.user_info`
 ```
 Resultado: 7199 filas con valores nulos en *last_month_salary* y *number_dependents*. Esto constituye aproximadamente el 20% de nuestra base de datos de usuarios.
 
+![imagen](https://github.com/user-attachments/assets/55a0c265-cf47-4131-9ad4-821561fec18a)
+
 ## Identificar y manejar valores duplicados
 
 La única tabla con valores duplicados es *loans_outstanding*.
@@ -283,10 +285,14 @@ FROM outliers
 WHERE outlier_flag = 'outlier'
 ```
 Resultado: Se detectaron 866 outliers en *last_month_salary*.
+![imagen](https://github.com/user-attachments/assets/915238a1-c7d7-4371-8332-b69a0118a3ed)
+
 
 ## Tratar *outliers*: *capping* mediante winzorización en *last_month_salary*
 
 Dado que los datos de *last_month_salary* están en una distribución que no es normal, para imputar los datos se deben usar la mediana y no el promedio.
+
+![imagen](https://github.com/user-attachments/assets/0f01b928-3456-4690-971b-a99b71bb063e)
 
 ### Imputar nulos en *last_month_salary*
 
@@ -340,6 +346,9 @@ SELECT DISTINCT
 (SELECT mediana_inicial FROM inicial_mediana LIMIT 1) AS P50_inicial
 FROM percentiles
 ```
+
+![imagen](https://github.com/user-attachments/assets/0afa3136-1c79-4e0e-9c61-3fb539c66969)
+
 Resultado: La mediana original y la mediana de los datos ya winzorizados es igual (5400), lo cual sugiere estabilidad en los datos y que los valores imputados no han afectado significativamente la parte central de la distribución de éstos. También puede indicar que los datos imputados son consistentes con la distribución general de la variable, lo que significa que los valores imputados no introdujeron un sesgo significativo.
 
 A continuación imputamos los nulos de *last_month_salary* con el valor de la mediana (5400) y creamos una nueva tabla *user_info* con los datos imputados y sin la columna *sex*, la cual dejamos fuera ya que produce un sesgo que puede incidir en el aumento de la brecha de género.
@@ -384,6 +393,8 @@ FROM winzorizacion
 ## Tratar outliers: mediana en *number_dependents*
 
 La variable *number_dependents* presenta una distribución que no es normal y um rango de valores de datos que no es amplio (0 a 13). Para imputar los nulos de *number_dependents* (7199 de un total de 36000, es decir, un 20%) utilizaremos la mediana, que es 0. No se considerarán datos como *outliers*, ya que si bien el máximo de 13 es un número que podría parecer alto para el número de dependientes, no es improbable y además no altera la mediana.
+
+![imagen](https://github.com/user-attachments/assets/d19d795d-7b45-4dea-aeec-34c6969a4d2d)
 
 Actualizamos la consulta anterior:
 
@@ -431,6 +442,8 @@ FROM winzorizacion
 
 La variable *age* presenta una distribución de datos normal, por lo que podemos utilizar el Z-score. El umbral de 2 para el Z-score se utiliza comúnmente en estadística para identificar outliers basados en la distribución normal de los datos. Para imputar los 886 outliers utilizaremos la edad de corte que nos arroje el Z-score.
 
+![imagen](https://github.com/user-attachments/assets/7dfd8a63-f962-4e60-b73c-2ae5350e1486)
+
 Una exploración visual de los datos nos arrojó que son bastantes los *user_id* que figuran con edades sobre 80 años (hasta 109 años). En total son 886 *outliers* detectados con el Z-Score.
 
 ```sql
@@ -461,6 +474,8 @@ SELECT
  END AS outlier_flag_age
  FROM z_scores
 ```
+![imagen](https://github.com/user-attachments/assets/ace37193-5db9-441b-a5c2-35457e500d8f)
+
 Resultado: La edad de corte queda en 82 años, siendo *outliers* las edades de 83 a 109 años. Por lo tanto, imputaremos los *outliers* con el valor 82. 
 El z-score de la menor edad (21) es -2.12404253408125 y el de la mayor (109) es 3.8253881585277063.
 
@@ -509,6 +524,8 @@ FROM winzorizacion
 ## Comprobar y cambiar tipo de dato
 
 Revisando las variables de las 4 tablas, se constató que *user_id* debería ser STRING en vez de INTEGER. Usamos SAFE_CAST para cambiar el tipo de dato en las 4 tablas.
+
+![imagen](https://github.com/user-attachments/assets/2b3fc604-7ec6-49d3-910e-33307bddbcfe)
 
 ```sql
 -- Crear vista default_clean cambiando user_id a STRING
@@ -761,6 +778,8 @@ Correlaciones positivas moderadas:
 No hay correlaciones negativas ni altas ni moderadas. Todas las demás correlaciones entre variables son bajas o sin correlación significativa.
 
 De las variables de retraso en los pagos, el retraso de más de 90 días es el que mayor correlación positiva tiene con el total de retrasos y con los demás tipos de retraso, por lo que sería la variable a tener en consideración para el análisis entre las de ese grupo. *Unsecured_credit_ratio* y *using_lines_not_secured_personal_asset*s resultaron poseer una correlación positiva alta.
+
+![imagen](https://github.com/user-attachments/assets/53a1c8b8-f102-4842-a034-829b5f3d10cf)
 
 ## Aplicar técnica de análisis
 
@@ -1450,7 +1469,10 @@ alto (> 2.5): 0.0<br>
 
 ## Conclusiones riesgo relativo
 
-Factores de mayor riesgo resumidos:
+Factores de mayor riesgo resumidos 
+
+![imagen](https://github.com/user-attachments/assets/721e2230-bbda-491b-a158-edf8a5533e6a)
+
 - *age*: Grupo etario joven (21 a 34 años), con aproximadamente un 82.19% más de probabilidad de ser mal pagador. Le sigue el grupo adulto (35 a 54 años), con aproximadamente un 93.56% más de probabilidad de ser mal pagador. 
 - *income_category*: Clientes con salario bajo (hasta $4679), quienes tienen aproximadamente un 44.83% más de probabilidad de ser mal pagadores.
 - *debt_to_income_ratio*: Clientes con una proporción/cantidad baja de deuda en relación con salario mensual (hasta 35%), con aproximadamente un 37.66% más de probabilidad de ser malos pagadores. 
@@ -1460,6 +1482,10 @@ Factores de mayor riesgo resumidos:
 - *high_debt_indicator*: Clientes con alto nivel de endeudamiento (ratio de deuda por encima del 40%-43%), con aproximadamente un 58.06% más de probabilidad de incumplir con sus pagos.
 - *total_delayed_payments*: Clientes con 1 a 5 retrasos de pagos, con aproximadamente 402.75% más de probabilidad de incumplir sus pagos.
 - *number_dependents*: Clientes con 6 o más dependientes a su cargo, con aproximadamente un un 168.91% más de riesgo de incumplir con sus pagos. Le sigue el grupo de clientes con 1 a 5 dependientes, con aproximadamente un 60.74% más de riesgo de posibilidad de ser mal pagador.
+
+Factores de menor riesgo resumidos
+
+![imagen](https://github.com/user-attachments/assets/41b6e8d1-bde7-40e4-995e-e3bc95386f00)
 
 ## Validación hipótesis
 
