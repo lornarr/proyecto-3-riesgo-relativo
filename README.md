@@ -768,7 +768,7 @@ De las variables de retraso en los pagos, el retraso de más de 90 días es el q
 
 A través del cálculo de riesgo relativo buscaremos validar las hipótesis proporcionadas y realizar nuevos hallazgos. Luego de validar las hipótesis según el resultado del cálculo del riesgo relativo, construiremos una tabla con el rango de datos de cada variable que tenga mayor riesgo de ser mal pagadora.
 
-### Riesgo relativo *age_group*
+## Riesgo relativo *age_group*
 
 Tanto jóvenes como adultos son grupos de riesgo, pero el riesgo relativo es un poco más alto en el grupo adulto. Es decir, el grupo de mayor riesgo es el joven (21 a 34 años), con aproximadamente un 93.56% más de probabilidad de ser mal pagador en comparación con el resto. El grupo adulto (35 a 54 años) tiene aproximadamente un 82.19% más de probabilidad de ser mal pagador.  
 
@@ -1469,17 +1469,6 @@ Factores de mayor riesgo resumidos:
 
 ## Hallazgos 
 
-- Los malos pagadores constituyen un 16,4% (622) del total de prestatarios (35.575).
-- Las variables altamente significativas a la hora de determinar riesgo de impago son contar con retrasos de más de 90 días y luego un uso alto de líneas de crédito no aseguradas en bienes personales. Esto subraya la severidad del impacto que los retrasos prolongados en los pagos y una alta exposición al crédito no garantizado pueden tener en la probabilidad de incumplimiento.
-- Los retrasos de más de 90 días son más relevantes que los de 60 a 89 días y los de 30 a 59 días.
-- La probabilidad de incumplimiento de pago disminuye con la edad, lo cual puede reflejar una mayor estabilidad financiera y experiencia en la gestión de crédito a medida que las personas envejecen. Factores como la estabilidad laboral, la carga de deuda, los ingresos y el historial crediticio podrían estar influyendo en el riesgo.
-- Los resultados muestran una clara relación inversa entre el nivel de ingresos y el riesgo de incumplimiento de pagos, así como una relación inversa entre el total de préstamos y el riesgo de impago.
-- El grupo de clientes con 1 a 5 dependientes a su cargo (intermedio) es el de mayor riesgo.
-- Los clientes con una proporción baja de deuda en relación con su salario mensual (hasta 35%) son los de mayor riesgo de incumplimiento de pago. Esto puede parecer contraintuitivo, pero podría indicar que otros factores, como otros ratios de deuda, el historial crediticio o el comportamiento financiero también juegan un papel importante.
-- Los clientes con alto nivel de endeudamiento en relación a su patrimonio (ratio de deuda por encima del 40%-43%) poseen mayor probabilidad de incumplir con sus pagos.
-- Los créditos de otros tipo (vs. los inmobiliarios) son aquellos donde más clientes riesgosos se concentran . Representan el 88,07% del total de créditos, aunque poseen porcentaje de incumplimiento de pago prácticamente igual al de los inmobiliarios (1,41% vs. 1,40%).
-
-## Hallazgos 
 - Los malos pagadores constituyen un 16,4% (622) del total de prestatarios (35.575).
 - Las variables altamente significativas a la hora de determinar riesgo de impago son contar con retrasos de más de 90 días y luego un uso alto de líneas de crédito no aseguradas en bienes personales. Esto subraya la severidad del impacto que los retrasos prolongados en los pagos y una alta exposición al crédito no garantizado pueden tener en la probabilidad de incumplimiento.
 - Los retrasos de más de 90 días son más relevantes que los de 60 a 89 días y los de 30 a 59 días.
