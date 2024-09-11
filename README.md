@@ -30,22 +30,24 @@ SQL y Pyhton
 
 Se trabajó en base a 4 tablas que contienen datos de caracterización de los clientes y sus respectivos comportamientos de pago. Las variables que componen el conjunto de datos original son las siguientes:
 - *user_info*
-  - *user_id*: número de identificación del cliente (único para cada cliente).
+  - *user_id*: número de identificación del cliente.
   - *age*: edad del cliente.
   - *sex*: género del cliente.
   - *last_month_salary*: último salario mensual que el cliente reportó al banco.
-  - *number_dependents*: número de dependientes.
+  - *number_dependents*: número de dependientes a cargo del cliente.
 - *loans_outstanding*
-  - *loan_id*
-  - *loan_type*
-  - *using_lines_not_secured_personal_assets*
-  - *more_90_days_overdue*
-  - *number_times_delayed_payment_loan_60_89_days*
-  - *number_times_delayed_payment_loan_30_59_days*
-  - *debt_ratio*
+  - *user_id*
+  - *loan_id*: número de identificación de cada préstamo.
+  - *loan_type*: tipo de préstamo (*real estate* = inmobiliario, *others* = otro).
+  - *using_lines_not_secured_personal_assets*: cuánto está utilizando el cliente en relación con su límite de crédito en líneas que no están garantizadas con bienes personales, como inmuebles y automóviles.
+  - *user_id*
+  - *more_90_days_overdue*: número de veces que el cliente tuvo su pago vencido más de 90 días.
+  - *number_times_delayed_payment_loan_60_89_days*: número de veces que el cliente retrasó el pago de un préstamo entre 60 y 89 días.
+  - *number_times_delayed_payment_loan_30_59_days*: número de veces que el cliente se retrasó en el pago de un préstamo entre 30 y 59 días.
+  - *debt_ratio*: relación entre las deudas y el patrimonio del prestatario. Ratio de deuda = Deudas / Patrimonio.
 - *defaul_flag*
   - *user_id*
-  - *default_flag*
+  - *default_flag*: clasificación de los clientes morosos (1 para clientes que pagan mal, 0 para clientes que pagan bien).
 
 
 
