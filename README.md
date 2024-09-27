@@ -3,10 +3,8 @@
 ## Enlaces
 
 Bitácora [enlace](https://docs.google.com/document/d/10HBY7hmzNywzdb3slroqzfaB9khmlWiie5k556U57IM/edit)<br>
-Dashboard Looker Studio [enlace](https://www.google.com/url?q=https://lookerstudio.google.com/reporting/7893ce7d-40d0-4d16-ba5c-b9275a236f84/page/p_778ch8jqkd/edit&sa=D&source=docs&ust=1726039376046579&usg=AOvVaw2UbAPXp76nCRbfaiSDrke_)<br>
-Presentación Google Slides [enlace](https://docs.google.com/presentation/d/1Crpgxey_52Pm-UbDiK37PEK-PRMR0aVUuv8OIcBj5_k/edit#slide=id.p)<br>
-Proyecto BigQuery [enlace](https://console.cloud.google.com/bigquery?hl=es&project=laboratoria-426816&ws=!1m0)<br>
-Tablas riesgo relativo y Correlación Pearson Google Sheets [enlace](https://docs.google.com/spreadsheets/d/1llGpm6qXcjecN5HqJBCZ8O1bd2yvLPsxzYjOPIBRCbU/edit?gid=0#gid=0)<br>
+Dashboard [enlace](https://www.google.com/url?q=https://lookerstudio.google.com/reporting/7893ce7d-40d0-4d16-ba5c-b9275a236f84/page/p_778ch8jqkd/edit&sa=D&source=docs&ust=1726039376046579&usg=AOvVaw2UbAPXp76nCRbfaiSDrke_)<br>
+Presentación [enlace](https://docs.google.com/presentation/d/1Crpgxey_52Pm-UbDiK37PEK-PRMR0aVUuv8OIcBj5_k/edit#slide=id.p)<br>
 
 ## Resumen
 
