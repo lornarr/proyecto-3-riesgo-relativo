@@ -12,7 +12,7 @@ La disminución de tasas de interés en el mercado ha desencadenado un aumento n
 
 ## Herramientas utilizadas
 
-BigQuery, Google Sheets, Looker Studio y Google Slides.
+BigQuery, Google Sheets, Looker Studio, Google Slides, Loom, Metodología Ágil Scrum y Slack. 
 
 ## Lenguajes utilizados
 
