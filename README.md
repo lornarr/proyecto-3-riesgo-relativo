@@ -1493,7 +1493,7 @@ Factores de menor riesgo resumidos
 
 ## Hallazgos 
 
-- Los malos pagadores constituyen un 16,4% (622) del total de prestatarios (35.575).
+- Los malos pagadores constituyen un 1,75% (622) del total de prestatarios (35.575).
 - Las variables altamente significativas a la hora de determinar riesgo de impago son contar con retrasos de más de 90 días y luego un uso alto de líneas de crédito no aseguradas en bienes personales. Esto subraya la severidad del impacto que los retrasos prolongados en los pagos y una alta exposición al crédito no garantizado pueden tener en la probabilidad de incumplimiento.
 - Los retrasos de más de 90 días son más relevantes que los de 60 a 89 días y los de 30 a 59 días.
 - La probabilidad de incumplimiento de pago disminuye con la edad, lo cual puede reflejar una mayor estabilidad financiera y experiencia en la gestión de crédito a medida que las personas envejecen. Factores como la estabilidad laboral, la carga de deuda, los ingresos y el historial crediticio podrían estar influyendo en el riesgo.
