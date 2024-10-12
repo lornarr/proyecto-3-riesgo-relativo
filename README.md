@@ -3,8 +3,8 @@
 ## Enlaces
 
 [Bitácora](https://docs.google.com/document/d/10HBY7hmzNywzdb3slroqzfaB9khmlWiie5k556U57IM/edit)<br>
-[Dashboard](https://www.google.com/url?q=https://lookerstudio.google.com/reporting/7893ce7d-40d0-4d16-ba5c-b9275a236f84/page/p_778ch8jqkd/edit&sa=D&source=docs&ust=1726039376046579&usg=AOvVaw2UbAPXp76nCRbfaiSDrke_)<br>
-[Presentación](https://docs.google.com/presentation/d/1Crpgxey_52Pm-UbDiK37PEK-PRMR0aVUuv8OIcBj5_k/edit#slide=id.p)<br>
+[Dashboard](https://drive.google.com/file/d/1yjfHCmBaRYQYCIa9IK1DpFJgCo265rB1/view?usp=sharing)<br>
+[Presentación](https://docs.google.com/presentation/d/1Crpgxey_52Pm-UbDiK37PEK-PRMR0aVUuv8OIcBj5_k/edit?usp=sharing)<br>
 
 ## Resumen
 
