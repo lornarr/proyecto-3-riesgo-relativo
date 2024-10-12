@@ -4,7 +4,7 @@
 
 [Bitácora](https://docs.google.com/document/d/10HBY7hmzNywzdb3slroqzfaB9khmlWiie5k556U57IM/edit)<br>
 [Dashboard](https://drive.google.com/file/d/1yjfHCmBaRYQYCIa9IK1DpFJgCo265rB1/view?usp=sharing)<br>
-[Presentación](https://docs.google.com/presentation/d/1Crpgxey_52Pm-UbDiK37PEK-PRMR0aVUuv8OIcBj5_k/edit?usp=sharing)<br>
+[Presentación](https://drive.google.com/file/d/1tajQdMMsf1dm08tur4rnlwR4TOa1z1ys/view?usp=sharing)
 
 ## Resumen
 
